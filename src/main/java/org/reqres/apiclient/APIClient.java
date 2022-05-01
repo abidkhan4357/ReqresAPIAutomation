@@ -3,6 +3,7 @@ package org.reqres.apiclient;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import org.reqres.config.ConfigFactory;
 import org.reqres.interfaces.SendRequest;
 import org.reqres.utils.JsonSerializer;
 
@@ -12,7 +13,7 @@ import java.util.Map;
 public class APIClient extends APICore{
     private static RequestSpecification requestSpecification = RestAssured.given();
      public APIClient(){
-        setBaseUrl("https://reqres.in/api/");
+         setBaseUrl(ConfigFactory.getConfig().baseURL());
     }
 
     @Override
