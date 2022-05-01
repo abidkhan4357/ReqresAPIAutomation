@@ -1,10 +1,11 @@
 package org.reqres.datamodels;
 
-import lombok.Builder;
-import lombok.Getter;
+import io.github.sskorol.data.Source;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
-@Getter
-@Builder(setterPrefix = "set")
+@Data
+@Source(path = "userdata.json")
 public class UserData {
 
     private String name;
