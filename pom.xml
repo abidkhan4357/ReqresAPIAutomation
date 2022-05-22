@@ -12,7 +12,6 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <owner.version>1.0.12</owner.version>
-        <extentreport.version>5.0.8</extentreport.version>
         <assertjcore.version>3.21.0</assertjcore.version>
         <testng.version>7.4.0</testng.version>
         <lombok.version>1.18.20</lombok.version>
@@ -20,8 +19,8 @@
         <restassured.version>4.3.2</restassured.version>
         <jackson.version>2.13.2.2</jackson.version>
         <jsonschemavalidator.version>4.3.0</jsonschemavalidator.version>
+        <extentreport.version>5.0.6</extentreport.version>
     </properties>
-
 
     <dependencies>
         <dependency>
@@ -49,12 +48,6 @@
         </dependency>
 
         <dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports</artifactId>
-            <version>${extentreport.version}</version>
-        </dependency>
-
-        <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
             <version>${assertjcore.version}</version>
@@ -70,6 +63,18 @@
             <groupId>io.github.sskorol</groupId>
             <artifactId>test-data-supplier</artifactId>
             <version>${datasupplier.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>${extentreport.version}</version>
         </dependency>
 
     </dependencies>

@@ -3,7 +3,6 @@ package org.reqres.tests;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 import org.assertj.core.api.Assertions;
-import org.hamcrest.Matcher;
 import org.hamcrest.MatcherAssert;
 import org.reqres.apiclient.APIClient;
 import org.reqres.constants.ResponseCode;

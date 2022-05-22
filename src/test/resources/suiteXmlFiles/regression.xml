@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regres API Tests">
+    <listeners>
+        <listener class-name="org.reqres.listeners.ExtentReportListener"></listener>
+    </listeners>
+    <test thread-count="1" name="UserTests">
+        <classes>
+            <class name="org.reqres.tests.UserTests"></class>
+        </classes>
+    </test>
+</suite>
