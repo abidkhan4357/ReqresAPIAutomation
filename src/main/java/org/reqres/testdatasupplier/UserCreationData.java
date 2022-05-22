@@ -3,7 +3,7 @@ package org.reqres.testdatasupplier;
 import io.github.sskorol.core.DataSupplier;
 import io.github.sskorol.data.JsonReader;
 import one.util.streamex.StreamEx;
-import org.reqres.datamodels.UserData;
+import org.reqres.requestmodels.UserData;
 
 import static io.github.sskorol.data.TestDataReader.use;
 

@@ -1,4 +1,4 @@
-package org.reqres.datamodels;
+package org.reqres.requestmodels;
 
 import io.github.sskorol.data.Source;
 import lombok.Data;
