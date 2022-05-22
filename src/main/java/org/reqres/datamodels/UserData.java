@@ -1,7 +1,6 @@
 package org.reqres.datamodels;
 
 import io.github.sskorol.data.Source;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data

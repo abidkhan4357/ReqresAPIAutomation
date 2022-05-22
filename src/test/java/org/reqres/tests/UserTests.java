@@ -2,6 +2,7 @@ package org.reqres.tests;
 
 import io.restassured.response.Response;
 import org.reqres.apiclient.APIClient;
+import org.reqres.constants.Services;
 import org.reqres.datamodels.UserData;
 import org.reqres.testdatasupplier.UserCreationData;
 import org.testng.annotations.Test;
@@ -12,7 +13,7 @@ public class UserTests extends APIClient {
 
     @Test(dataProvider = "getTwoUserData", dataProviderClass = UserCreationData.class)
     public void createTwoSetsOfUsers(UserData userData){
-        apiResponse = apiClient.post("users", userData);
+        apiResponse = apiClient.post(Services.USERS, userData);
         apiResponse.prettyPrint();
     }
 

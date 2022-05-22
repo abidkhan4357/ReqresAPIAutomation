@@ -3,9 +3,9 @@ package org.reqres.utils;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public final class JsonSerializer {
+public final class JsonSerializerUtil {
 
-    private JsonSerializer(){}
+    private JsonSerializerUtil(){}
 
     private static String jsonString;
 
